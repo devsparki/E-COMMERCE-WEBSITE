@@ -1,0 +1,115 @@
+/* ==== IMPORT TEM QUE VIR PRIMEIRO ==== */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+
+/* ==== TAILWIND ==== */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ==== DESIGN SYSTEM ==== */
+
+@layer base {
+  :root {
+    --background: 0 0% 98%;
+    --foreground: 215 25% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 215 25% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 215 25% 15%;
+
+    --primary: 180 65% 45%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 215 20% 92%;
+    --secondary-foreground: 215 25% 15%;
+
+    --muted: 215 20% 96%;
+    --muted-foreground: 215 15% 45%;
+
+    --accent: 180 65% 45%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 215 20% 88%;
+    --input: 215 20% 88%;
+    --ring: 180 65% 45%;
+
+    --radius: 0.75rem;
+
+    /* E-commerce specific tokens */
+    --product-card-bg: 0 0% 100%;
+    --product-card-hover: 180 65% 98%;
+    --price-text: 180 70% 35%;
+    --badge-sale: 0 72% 51%;
+    --badge-new: 180 65% 45%;
+
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(180 65% 45%), hsl(180 65% 55%));
+    --gradient-hero: linear-gradient(180deg, hsl(0 0% 98%), hsl(180 65% 98%));
+
+    /* Shadows */
+    --shadow-card: 0 2px 8px -2px hsl(215 25% 15% / 0.08);
+    --shadow-hover: 0 8px 24px -4px hsl(215 25% 15% / 0.12);
+
+    /* Transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .dark {
+    --background: 215 28% 12%;
+    --foreground: 0 0% 98%;
+
+    --card: 215 25% 16%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 215 25% 16%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 180 65% 55%;
+    --primary-foreground: 215 28% 12%;
+
+    --secondary: 215 25% 20%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 215 25% 20%;
+    --muted-foreground: 215 15% 65%;
+
+    --accent: 180 65% 55%;
+    --accent-foreground: 215 28% 12%;
+
+    --destructive: 0 62% 45%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 215 25% 24%;
+    --input: 215 25% 24%;
+    --ring: 180 65% 55%;
+
+    --product-card-bg: 215 25% 16%;
+    --product-card-hover: 215 25% 20%;
+    --price-text: 180 65% 65%;
+    --badge-sale: 0 62% 45%;
+    --badge-new: 180 65% 55%;
+
+    --shadow-card: 0 2px 8px -2px hsl(0 0% 0% / 0.3);
+    --shadow-hover: 0 8px 24px -4px hsl(0 0% 0% / 0.4);
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 700;
+  }
+}
+q
